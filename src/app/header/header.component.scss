@@ -1,0 +1,25 @@
+.navbar-style {
+  position: absolute;
+  background-color: #21272c;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 5px 0px 0px;
+}
+
+.brand-style {
+  background-color: #000000;
+  padding: 0px;
+}
+
+.sidepanel-style {
+  position: absolute;
+  background-color: #21272c;
+  width: 150px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 150px 5px 5px 25px;
+}
