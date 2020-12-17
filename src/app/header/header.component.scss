@@ -4,13 +4,48 @@
   z-index: 2;
   top: 0;
   left: 0;
+  height: 150px;
   width: 100%;
   padding: 0px 5px 0px 0px;
 }
 
-.brand-style {
+@media (max-width: 640px) 
+{
+  .navbar-style {
+    position: absolute;
+    background-color: #21272c;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    padding: 0px 5px 0px 0px;
+  }
+  
+}
+
+.brand-bg-style {
   background-color: #000000;
   padding: 0px;
+}
+
+@media (max-width: 640px) 
+{
+  .brand-bg-style {
+    background-color: #21272c;
+    padding: 0px;
+  }
+}
+
+.brand-img-style {
+  height: 150px;
+}
+
+@media (max-width: 640px) 
+{
+  .brand-img-style {
+    height: 100px;
+  }
 }
 
 .sidepanel-style {
@@ -22,4 +57,11 @@
   left: 0;
   height: 100%;
   padding: 150px 5px 5px 25px;
+}
+
+@media (max-width: 640px) 
+{
+  .sidepanel-style {
+    display: none;
+  }
 }
