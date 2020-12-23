@@ -1,5 +1,5 @@
 .navbar-style {
-  position: absolute;
+  position: fixed;
   background-color: #21272c;
   z-index: 2;
   top: 0;
@@ -12,7 +12,7 @@
 @media (max-width: 640px) 
 {
   .navbar-style {
-    position: absolute;
+    position: fixed;
     background-color: #21272c;
     z-index: 2;
     top: 0;
@@ -21,18 +21,17 @@
     width: 100%;
     padding: 0px 5px 0px 0px;
   }
-  
 }
 
 .brand-bg-style {
-  background-color: #000000;
+  background-color: #121518;
   padding: 0px;
 }
 
 @media (max-width: 640px) 
 {
   .brand-bg-style {
-    background-color: #21272c;
+    background-color: #121518;
     padding: 0px;
   }
 }
@@ -49,7 +48,7 @@
 }
 
 .sidepanel-style {
-  position: absolute;
+  position: fixed;
   background-color: #21272c;
   width: 150px;
   z-index: 1;
