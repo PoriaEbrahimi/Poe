@@ -1,0 +1,25 @@
+.body-style {
+  position: relative;
+  z-index: 0;
+  padding: 5rem;
+  min-height: calc(100vh - 15rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff8c;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.img-style {
+  height: 25rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 5rem;
+  display: block;
+}
