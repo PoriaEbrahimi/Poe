@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Store } from '@ngrx/store';
-import { Observable, tap } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -10,10 +8,9 @@ import { Observable, tap } from 'rxjs';
 })
 export class LoginComponent implements OnInit {
 
-  loginForm: FormGroup;
+  public loginForm: FormGroup;
 
   constructor(
-    private store: Store,
   ) {}
 
   ngOnInit(): void {
@@ -28,7 +25,6 @@ export class LoginComponent implements OnInit {
         validators: [Validators.required]
       }),
     })
-    
   }
 
   onLoginSubmit() {
@@ -37,7 +33,8 @@ export class LoginComponent implements OnInit {
     }
     const email = this.loginForm.value.email;
     const password = this.loginForm.value.password;
-    this.store.dispatch(loginStart({ email, password }));
+
+    console.log(this.loginForm);
   }
 
 }
