@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public readonly imagesFeatured = [
+    '/assets/sloth.png',
+    '/assets/sloth.png',
+    '/assets/sloth.png',
+    '/assets/sloth.png',
+    '/assets/sloth.png',
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
